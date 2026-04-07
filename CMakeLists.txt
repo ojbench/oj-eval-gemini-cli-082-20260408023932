@@ -3,7 +3,7 @@ project(LinkedHashMap)
 
 set(CMAKE_CXX_STANDARD 17)
 
-file(GLOB SOURCES "*.cpp")
+file(GLOB_RECURSE SOURCES "*.cpp")
 
 if(SOURCES)
     add_executable(code ${SOURCES})
